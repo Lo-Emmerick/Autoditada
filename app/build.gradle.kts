@@ -7,6 +7,10 @@ android {
     namespace = "com.example.autodidata"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.autodidata"
         minSdk = 24
@@ -36,7 +40,10 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.koin)
+    implementation(libs.koincompat)
+    implementation(libs.koinworkmanager)
+    implementation(libs.koinnavigation)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
