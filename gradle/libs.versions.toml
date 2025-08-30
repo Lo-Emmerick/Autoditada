@@ -10,6 +10,8 @@ material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 koin = "3.2.0"
+ksp = "2.0.21-1.0.26"
+room = "2.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,8 +26,11 @@ koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 koincompat = { group = "io.insert-koin", name = "koin-android-compat", version.ref = "koin" }
 koinworkmanager = { group = "io.insert-koin", name = "koin-androidx-workmanager", version.ref = "koin" }
 koinnavigation = { group = "io.insert-koin", name = "koin-androidx-navigation", version.ref = "koin" }
+roomcompiler = {group = "androidx.room", name = "room-compiler", version.ref = "room"}
+roomruntime = {group = "androidx.room", name = "room-runtime", version.ref = "room"}
+room = {group = "androidx.room", name = "room-ktx", version.ref = "room"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
